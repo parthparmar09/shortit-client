@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --myClr1 : rgb(145, 145, 145);
+    --myClr2 : darkolivegreen;
+
+}
+header, main, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+h1{
+    font-weight: 700;
+    font-style: italic;
+    font-size: xx-large;
+    color: var(--myClr2);
+}
+
+h3{
+    font-size: x-large;
+    color: var(--myClr1);
+}
+
+.margin-2{
+    margin: 0.5rem;
+}
+
+.container{
+    padding: 1rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px var(--myClr1);
+}
+
+.url-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 2px solid var(--myClr1);
+    border-radius:5px ;
+    overflow: hidden;
+}
+.url-container input{
+    border: none;
+    font-size: large;
+    padding: 1rem;
+    height: 50px;
+    width: 75%;
+}
+
+.url-container input::placeholder{
+    font-size: large;
+    color: var(--myClr1);
+}
+
+.url-container button{
+    cursor: pointer;
+    border: none;
+    background-color: var(--myClr1);
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    height: 50px;
+    width: 25%;
+    transition: 50ms all;
+
+}
+
+.url-container button:hover{
+    background-color: var(--myClr2);
+    transform: scale(1.1);
+
+}
+
+.url-container button:active{
+    transform: scale(1.1);
+}
+.msg-container{
+    padding: 1rem;
+}
+.msg-container a{
+    font-size: large;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}

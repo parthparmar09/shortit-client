@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="icon2.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ShortIt</title>
+  </head>
+  <body>
+    <header>
+        <h1>ShortIt - URL Shortener</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h3 class="margin-2">Paste the URL to be shortened</h3>
+        <div class="url-container margin-2">
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="enter the link here"
+          />
+          <button id="submitBtn" onclick="startShortening()">
+            Shorten URL
+          </button>
+        </div>
+        <div id="msg-display" class="msg-container margin-2">
+        </div>
+      </div>
+    </main>
+
+    <footer>&#169; Made by Parth Parmar</footer>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
